@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AttaTechyKid iOS Shortcuts Beta Program</title>
+
+    <!-- Removes argument after webpage refresh -->
+    <!-- Script from ChatGPT -->
+
+    <script>
+        // Check if the page was accessed with an argument in the URL
+        window.addEventListener('DOMContentLoaded', function() {
+          var currentURL = window.location.href;
+          if (currentURL.indexOf('#') !== -1) {
+            // Remove the argument from the URL
+            var baseURL = currentURL.split('#')[0];
+            history.replaceState({}, document.title, baseURL);
+          }
+        });
+      </script>
+
+      <!-- End of Script aka JavaScript -->
+
+</head>
+<body> 
+   <h1>AttaTechyKid iOS Shortcut Beta Program</h1>
+   <p>Click <a href="http://attatechykid.github.io" target="_blank">here</a> to go to the homepage.</p>
+   <p>Click <a href="https://routinehub.co/user/AttaTechyKid-GitHub" target="_blank">here</a> to go to my RoutineHub page.</p>
+  
+    <div id="beta-id"></div>
+   <h4>Beta Key</h4>
+   <p>Enter your beta key.</p>
+
+   <form onsubmit="redirectURL(event)">
+    <input type="text" id="inputText" placeholder="Input Beta Key" autocomplete="off">
+    <input type="submit" value="Enter">
+  </form>
+  
+  <script>
+    function redirectURL(event) {
+      event.preventDefault(); // Prevent form submission
+  
+      var inputText = document.getElementById('inputText').value;
+      var url = 'http://attatechykid.000webhostapp.com/ios/shortcuts/beta/id/' + inputText ;
+      window.location.href = url;
+
+      document.getElementById('inputText').value = '';
+    }
+  </script>
+
+
+   <h4>How to enroll?</h4>
+   <p>Please fill out the form to enroll by clicking <a href="https://forms.gle/uAfb6fjBoU1AviwB6" target="_blank">here</a>. We will need your email infomation to contact you. We do not send spam.</p>
+   <p>Fill out the form with <b>correct</b> infomation.</p>
+   <br>
+   <div id="learn-more"></div>
+    <h4>Learn more</h4>
+    <p>You want to test out my shortcuts. You can give feedback and lots of other things. Just don't violate the <a href="#terms">Terms of Use</a>.</p>
+
+   <br>
+
+   <div id="terms"></div>
+   <h4>Terms of Use</h4>
+   <p>When you enroll, you <b>agree</b> to...</p>
+   <p>1. <b>Do not share</b> your beta key/ID or the shortcuts in beta to <b>anyone!</b></p>
+   <p>2. </p>
+
+
+
+
+
+
+
+
+<!-- CSS -->
+   <style>
+    
+    a {
+      color: cornflowerblue;
+    }
+   </style>
+
+   <!-- End of CSS code -->
+
+</body>
+</html>
